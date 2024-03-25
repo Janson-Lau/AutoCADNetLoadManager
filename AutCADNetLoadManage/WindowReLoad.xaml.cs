@@ -541,7 +541,14 @@ namespace AutoCADNetLoadManager
 
         private void removeButton_Click(object sender, RoutedEventArgs e)
         {
-            methodTree.Items.Remove(methodTree.SelectedItem);
+            if (methodTree.SelectedItem != null)
+            {
+                methodTree.Items.Remove(methodTree.SelectedItem);
+            }
+            else
+            {
+                MessageBox.Show("请选择要卸载的dll");
+            }            
         }
 
         private void reloadButton_Click(object sender, RoutedEventArgs e)

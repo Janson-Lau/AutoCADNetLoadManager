@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:AutoCADNetLoadManager"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="AutoCADNetLoadManager：www.lifangjimu.com"
+    Title="AutoCADNetLoadManager"
     Width="800"
     Height="600"
     Closed="Window_Closed"
@@ -50,7 +50,9 @@
                             Canvas.Bottom="1"
                             HorizontalAlignment="Stretch"
                             VerticalAlignment="Stretch"
-                            AllowDrop="True">
+                            AllowDrop="True"
+                            FontSize="30"
+                            Foreground="Black">
                             <TreeView.ItemContainerStyle>
                                 <Style TargetType="{x:Type TreeViewItem}">
                                     <EventSetter Event="MouseDoubleClick" Handler="OnItemMouseDoubleClick" />
@@ -230,16 +232,16 @@
                                 Margin="10,0,10,0"
                                 HorizontalAlignment="Center"
                                 Click="Button_Click_Find"
-                                Content="精确查找" 
-                                ToolTip="exact search"/>
+                                Content="精确查找"
+                                ToolTip="exact search" />
                             <Button
                                 Width="100"
                                 Height="30"
                                 Margin="0,0,0,0"
                                 HorizontalAlignment="Center"
                                 Click="Button_Click_FuzzyFind"
-                                Content="模糊查找" 
-                                ToolTip="fuzzy search"/>
+                                Content="模糊查找"
+                                ToolTip="fuzzy search" />
                         </StackPanel>
                         <StackPanel
                             Margin="0,0,20,0"
@@ -254,7 +256,7 @@
                                 VerticalContentAlignment="Center"
                                 Content="仅显示AutoCAD的dll"
                                 IsChecked="True"
-                                ToolTip="Only AutoCAD DLLS are displayed"/>
+                                ToolTip="Only AutoCAD DLLS are displayed" />
                             <Button
                                 Width="100"
                                 Height="30"
