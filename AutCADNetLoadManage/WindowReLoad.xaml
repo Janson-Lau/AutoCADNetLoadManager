@@ -51,8 +51,8 @@
                             HorizontalAlignment="Stretch"
                             VerticalAlignment="Stretch"
                             AllowDrop="True"
-                            FontSize="30"
-                            Foreground="Black">
+                            FontSize="20"
+                            FontWeight="Bold">
                             <TreeView.ItemContainerStyle>
                                 <Style TargetType="{x:Type TreeViewItem}">
                                     <EventSetter Event="MouseDoubleClick" Handler="OnItemMouseDoubleClick" />
@@ -84,12 +84,15 @@
                                                         HorizontalAlignment="Center"
                                                         VerticalAlignment="Center"
                                                         FontSize="23"
+                                                        FontWeight="Normal"
                                                         Foreground="White"
                                                         Text="{Binding MethodName}" />
                                                 </Border>
                                                 <TextBlock
                                                     Width="470"
                                                     Margin="220,30,0,0"
+                                                    FontSize="16"
+                                                    FontWeight="Normal"
                                                     Foreground="#808080"
                                                     Text="{Binding ClassName}" />
                                             </Grid>
